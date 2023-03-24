@@ -6,12 +6,13 @@
     Météo !
   </button>
 </form>
-  
+
 
 
 
 <div class="container" *ngIf="weatherData as w">
   <div class="upper-data">
+
     <img src="../assets/hot_background.png" *ngIf="convertTempToCelcius(w.main.temp) > 10">
     <img src="../assets/cold_background.png" *ngIf="convertTempToCelcius(w.main.temp)<= 10">
     <div class="weather-data">
